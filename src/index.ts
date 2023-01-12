@@ -18,5 +18,8 @@ async function main() {
   console.log(Number(data.slice(init, end)));
   console.log('Resonsed in %sms', respT - initT);
   console.log('Finished in: %sms', finishT - initT);
+  console.log('Found data in: %sms', finishT - dataT);
   console.log(dataT - respT);
 }
+
+main();
