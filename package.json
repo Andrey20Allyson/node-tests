@@ -6,13 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p src",
-    "compiled": "node dist/index.js",
-    "start": "ts-node src/index.ts --transpile-only"
+    "dev:build": "tsc -p src --watch",
+    "start": "electron dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "electron": "^22.0.3",
+    "express": "^4.18.2",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/react": "^18.0.27"
   }
 }
